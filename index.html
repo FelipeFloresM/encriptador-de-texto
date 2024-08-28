@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-mx">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,25 +13,27 @@
             name="texto" 
             class="texto" 
             id="texto" 
-            placeholder="Ingresa el texto aquí">
-            </textarea>
+            cols="30"
+            rows="10"
+            placeholder="Ingresa el texto aquí"
+            ></textarea>
         <div class="condiciones">
             <p>Solo letras minúsculas y sin acentos.</p>
         </div>
         <div class="botones">
-            <input class="boton-encriptar" type="button" value="Encriptar" onclick="Encriptar()">
-            <input class="boton-desencriptar" type="button" value="Desencriptar" onclick="Desencriptar()">
+            <input class="boton-encriptar" type="button" value="Encriptar" onclick="encriptar()">
+            <input class="boton-desencriptar" type="button" value="Desencriptar" onclick="desencriptar()">
         </div>
     </div>
     <div class="encriptado">
-        <img src="" alt="" id="personas">
+        <img src="./img/Muñeco.png" alt="" id="personas">
         <div class="mensaje-encriptado" id="mensaje-encriptado">
-            <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
+            <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
             <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-            <textarea name="mensaje" id="mensaje" class="mensaje"></textarea>
+            <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
         </div>
     </div>
 </div>
 </body>
-<script src="app.js"></script>
+<script src="index.js"></script>
 </html>
